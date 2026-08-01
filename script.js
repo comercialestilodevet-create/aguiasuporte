@@ -3,7 +3,7 @@
 // ==========================
 
 
-const numeroWhatsApp = "5521999999999"; 
+const numeroWhatsApp = "+44 7796 034833"; 
 // TROQUE PELO SEU NÚMERO
 
 
