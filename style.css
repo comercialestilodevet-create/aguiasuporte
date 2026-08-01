@@ -199,11 +199,17 @@ nav a:hover {
     align-items:center;
 
     background:
-
-    linear-gradient(
-    rgba(0,40,90,.75),
-    rgba(0,20,50,.8)
+    radial-gradient(
+        circle at top right,
+        rgba(212, 175, 55, 0.20),
+        transparent 35%
     ),
+    linear-gradient(
+        135deg,
+        #07111f 0%,
+        #0a192f 55%,
+        #183659 100%
+    );
 
     url("assets/hero-bg.jpg");
 
