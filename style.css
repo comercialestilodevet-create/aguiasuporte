@@ -1,1 +1,698 @@
+/* ==========================
+   RESET
+========================== */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ==========================
+   CORES PRINCIPAIS
+========================== */
+
+:root {
+
+    --azul: #004aad;
+    --azul-claro: #0077ff;
+    --dourado: #f5b700;
+    --escuro: #111;
+    --cinza: #f5f7fb;
+
+}
+
+
+/* ==========================
+   WHATSAPP FLUTUANTE
+========================== */
+
+.whatsapp-btn {
+
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    background: #25d366;
+    color:white;
+
+    padding:15px 25px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    z-index:999;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+}
+
+
+.whatsapp-btn:hover {
+
+    transform:scale(1.05);
+
+}
+
+
+/* ==========================
+   HEADER
+========================== */
+
+header {
+
+    position:fixed;
+
+    top:0;
+    width:100%;
+
+    background:white;
+
+    z-index:1000;
+
+    box-shadow:0 3px 15px rgba(0,0,0,.1);
+
+}
+
+
+header .container {
+
+    height:80px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+.logo {
+
+    font-size:25px;
+
+    font-weight:900;
+
+    color:var(--azul);
+
+}
+
+
+nav {
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+
+nav a {
+
+    color:#333;
+
+    font-weight:600;
+
+}
+
+
+nav a:hover {
+
+    color:var(--azul);
+
+}
+
+
+.btn-menu {
+
+    background:var(--azul);
+
+    color:white!important;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+}
+
+
+
+/* ==========================
+   HERO
+========================== */
+
+.hero {
+
+    min-height:100vh;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+
+    linear-gradient(
+    rgba(0,40,90,.75),
+    rgba(0,20,50,.8)
+    ),
+
+    url("assets/hero-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    padding-top:80px;
+
+}
+
+
+.hero-content {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:50px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+.hero-text {
+
+    width:55%;
+
+    color:white;
+
+}
+
+
+.tag {
+
+    background:var(--dourado);
+
+    color:#111;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    font-weight:bold;
+
+}
+
+
+.hero h1 {
+
+    font-size:52px;
+
+    line-height:1.15;
+
+    margin:25px 0;
+
+}
+
+
+.hero p {
+
+    font-size:20px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.hero-image {
+
+    width:40%;
+
+}
+
+
+.hero-image img {
+
+    border-radius:20px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+
+}
+
+
+
+.hero-buttons {
+
+    display:flex;
+
+    gap:20px;
+
+    margin-bottom:40px;
+
+}
+
+
+.btn-primary {
+
+    display:inline-block;
+
+    background:var(--dourado);
+
+    color:#111;
+
+    padding:15px 30px;
+
+    border-radius:40px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+
+.btn-primary:hover {
+
+    transform:translateY(-3px);
+
+}
+
+
+
+.btn-secondary {
+
+    padding:15px 30px;
+
+    border:2px solid white;
+
+    color:white;
+
+    border-radius:40px;
+
+    font-weight:bold;
+
+}
+
+
+
+.hero-numbers {
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+
+.number strong {
+
+    display:block;
+
+    font-size:30px;
+
+}
+
+
+.number span {
+
+    font-size:14px;
+
+}
+
+
+/* ==========================
+   SEÇÕES
+========================== */
+
+section {
+
+    padding:90px 0;
+
+}
+
+
+h2 {
+
+    text-align:center;
+
+    font-size:38px;
+
+    margin-bottom:50px;
+
+    color:var(--azul);
+
+}
+
+
+
+/* ==========================
+   BENEFÍCIOS
+========================== */
+
+
+.beneficios {
+
+    background:var(--cinza);
+
+}
+
+
+.cards {
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+
+.card {
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+.card:hover {
+
+    transform:translateY(-10px);
+
+}
+
+
+.card h3 {
+
+    color:var(--azul);
+
+    margin-bottom:15px;
+
+}
+
+
+/* ==========================
+   PROCESSO
+========================== */
+
+.timeline {
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:20px;
+
+}
+
+
+.step {
+
+    background:var(--azul);
+
+    color:white;
+
+    padding:25px;
+
+    border-radius:50%;
+
+    height:130px;
+
+    width:130px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+}
+
+
+.step span {
+
+    font-size:12px;
+
+    text-align:center;
+
+}
+
+
+/* ==========================
+   RESULTADO
+========================== */
+
+
+.resultado {
+
+    background:#002856;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+.resultado h2 {
+
+    color:white;
+
+}
+
+
+.resultado p {
+
+    max-width:800px;
+
+    margin:0 auto 30px;
+
+    font-size:18px;
+
+}
+
+
+
+/* ==========================
+   FAQ
+========================== */
+
+
+.faq-item {
+
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+.faq-item h3 {
+
+    color:var(--azul);
+
+    margin-bottom:10px;
+
+}
+
+
+
+/* ==========================
+   CTA
+========================== */
+
+
+.cta {
+
+    background:var(--dourado);
+
+    text-align:center;
+
+}
+
+
+.cta h2 {
+
+    color:#111;
+
+}
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+footer {
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+
+
+/* ==========================
+   RESPONSIVO
+========================== */
+
+
+@media(max-width:900px){
+
+
+header .container {
+
+    flex-direction:column;
+
+    height:auto;
+
+    padding:20px;
+
+}
+
+
+nav {
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+.hero-content {
+
+    flex-direction:column;
+
+}
+
+
+.hero-text,
+.hero-image {
+
+    width:100%;
+
+}
+
+
+.hero h1 {
+
+    font-size:38px;
+
+}
+
+
+.hero-numbers {
+
+    flex-direction:column;
+
+}
+
+
+.timeline {
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:500px){
+
+
+.timeline {
+
+    grid-template-columns:1fr;
+
+}
+
+
+.hero-buttons {
+
+    flex-direction:column;
+
+}
+
+
+h2 {
+
+    font-size:30px;
+
+}
+
+
+}
