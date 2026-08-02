@@ -3,29 +3,18 @@
 // ==========================
 
 
-const numeroWhatsApp = "5521977313000"; 
-// TROQUE PELO SEU NÚMERO
-
-
-const mensagem = 
-"Olá! Gostaria de saber mais sobre a consultoria Águia Suporte para Inglaterra.";
-
+// LINK OFICIAL GERADO PELO WHATSAPP BUSINESS
+const linkWhatsApp = "https://wa.me/message/K67WAJYLABGFD1";
 
 const linksWhats = document.querySelectorAll(
-".whatsapp-btn, .btn-menu, .hero .btn-primary, .resultado .btn-primary, .cta .btn-primary"
+    ".whatsapp-btn, .btn-menu, .hero .btn-primary, .resultado .btn-primary, .cta .btn-primary"
 );
 
-
-linksWhats.forEach(link => {
-link.rel = "noopener noreferrer";
-    
-    link.href =
-    `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
-
-    link.target="_blank";
-
+linksWhats.forEach((link) => {
+    link.href = linkWhatsApp;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
 });
-
 
 
 
