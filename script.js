@@ -17,7 +17,8 @@ const linksWhats = document.querySelectorAll(
 
 
 linksWhats.forEach(link => {
-
+link.rel = "noopener noreferrer";
+    
     link.href =
     `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
 
